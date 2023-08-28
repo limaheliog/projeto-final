@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+</head>
+
+<body>
+    <footer class="topo">
+    
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <ul class="menu__list">
+                    <ul class="menu_list_button"><li class="menu__item"><a class="cabecalho__menu__link" href="index.html"
+                            style="text-decoration: underline">Home</a> </li></ul>
+    
+                    <ul class="menu_list_button"><li class="menu__item"><a class="cabecalho__menu__link" href="about.html">Sobre mim</a></li></ul>
+                <ul class="menu_list_button"><li class="menu__item"><a class="cabecalho__menu__link" href="contact.html">Contato</a></li></ul>
+                </ul>
+            </nav>
+    
+            <nav class="cabecalho__menu__mobile invisivel">
+                <ul class="menu__list__mobile">
+                    <li class="menu__item"><a class="cabecalho__menu__link" href="index.html"
+                            style="text-decoration: underline">Home</a> </li>
+                    <li class="menu__item"><a class="cabecalho__menu__link" href="about.html">Sobre mim</a> </li>
+                    <li class="menu__item"><a class="cabecalho__menu__link" href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="button__menu"><img src="assets/menu.svg" alt="ícone de menu"></button>
+        </header>
+    </footer>
+        <button class="button__menu"><img src="assets/menu.svg" alt="ícone de menu"></button>
+    </header>
+    <main class="apresentacao apresentacao__altura">
+        <section class="apresentacao__conteudo" id="contato">
+
+            <h1 class="apresentacao__conteudo__titulo" id="nome-autor"> <strong class="titulo-destaque2">
+                </strong></h1>
+            <script src="js/contact.js"></script>
+
+
+            <form action="https://formsubmit.co/limahelio@gmail.com" method="POST" class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" name="name" id="nome" required placeholder="Preencha seu nome">
+                <label for="e-mail">E-mail:</label>
+                <input type="email" name="email" id="e-mail" required placeholder="seuemail@email.com.br">
+                <label for="mensagem"> Mensagem:</label>
+                <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+
+                <input type="hidden" name="_next" value="https://projeto-final-ten.vercel.app/email-enviado.html">
+                <button type="submit" class="toca_som">Enviar</button>
+            </form>
+
+        </section>
+        <img class="apresentacao__imagem" src="./assets/enviar-receber-email.png" alt="Foto da helio lima">
+        <audio src="sound/short-success-sound-glockenspiel-treasure-video-game-6346.mp3" id="som_botao"></audio>
+        <script src="js/som.js"></script>
+    </main>
+    <footer class="rodape">
+        <div class="logos">
+             <a href="https://cursos.alura.com.br/" target="_blank">
+                 <img src="./assets/Logo Alura Include.svg" alt="Logo da Alura Include" id="rodape__alura">
+             </a>
+             <p>Desenvolvido por <strong class="rodape__destaque">Helio Gaspar Meneghini de Lima</strong> no programa <strong
+                class="rodape__destaque">Alura Include</strong>.</p>
+             <a href="https://www.sp.senac.br/" target="_blank">
+                 <img src="./assets/1200px-Senac_logo.svg.png" alt="Logo do Senac" id="rodape__senac">
+             </a>
+        </div>
+        
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
